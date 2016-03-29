@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Jellyfish.DataAccess.Contracts")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Simple set of interfaces for Unit of Work and Repository patterns")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Julio Fuentes Cerrada")]
 [assembly: AssemblyProduct("Jellyfish.DataAccess.Contracts")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
