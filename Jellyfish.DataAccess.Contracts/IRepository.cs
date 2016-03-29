@@ -3,25 +3,26 @@
     using System;
     using System.Collections.Generic;
     using System.Linq.Expressions;
+    using System.Threading.Tasks;
 
     public interface IRepository<in TKey, TEntity>
     {
         // Create
-        TEntity Create(TEntity entity);
+        Task<TEntity> Create(TEntity entity);
 
         // Read
-        TEntity Read(TKey key);
+        Task<TEntity> Read(TKey key);
 
-        IEnumerable<TEntity> Read();
+        Task<IEnumerable<TEntity>> Read();
 
-        IEnumerable<TEntity> Read(Expression<Func<TEntity, bool>> where);
+        Task<IEnumerable<TEntity>> Read(Expression<Func<TEntity, bool>> where);
 
         // Update
-        void Update(TEntity entity);
+        Task Update(TEntity entity);
 
         // Delete
-        void Delete(TKey key);
+        Task Delete(TKey key);
 
-        void Delete(TEntity entity);
+        Task Delete(TEntity entity);
     }
 }
